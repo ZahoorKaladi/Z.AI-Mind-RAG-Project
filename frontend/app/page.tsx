@@ -84,7 +84,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8080/api/upload", {
+      const response = await fetch("https://zahoorahmed-z-ai-mind.hf.space/api/upload", {
         method: "POST",
         body: formData,
       });
@@ -96,7 +96,7 @@ export default function Home() {
         // --- Proactive Auto-Overview ---
         setIsTyping(true);
         try {
-          const overviewResponse = await fetch("http://127.0.0.1:8080/api/chat", {
+          const overviewResponse = await fetch("https://zahoorahmed-z-ai-mind.hf.space/api/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question: "Please provide a concise, professional, 3-sentence overview of what this document is about." }),
@@ -133,7 +133,7 @@ export default function Home() {
     setIsTyping(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:8080/api/chat", {
+      const response = await fetch("https://zahoorahmed-z-ai-mind.hf.space/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userMessage.content }),
