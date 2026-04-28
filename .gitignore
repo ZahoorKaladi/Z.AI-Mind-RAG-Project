@@ -1,0 +1,14 @@
+# Next.js Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Python Backend
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/venv/
+
+# AI & Database
+backend/chroma_db/
+backend/temp_*.pdf
