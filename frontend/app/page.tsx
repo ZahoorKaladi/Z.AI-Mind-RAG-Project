@@ -62,7 +62,7 @@ export default function Home() {
   // --- NEW: Handle Document Removal ---
   const handleRemove = async () => {
     try {
-      await fetch("http://127.0.0.1:8080/api/clear", { method: "DELETE" });
+      await fetch("https://zahoorahmed-z-ai-mind.hf.space/api/clear", { method: "DELETE" });
     } catch (e) {
       console.error("Failed to clear backend memory");
     }
